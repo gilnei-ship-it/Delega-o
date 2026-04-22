@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegação: Produtividade Brisanet</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
         /* 1. SETUP & CORE DESIGN */
         * { box-sizing: border-box; }
@@ -22,7 +24,7 @@
             place-items: center;
         }
 
-        /* BRISANET BRAND COLORS (REVISED FOR LIGHT THEME) */
+        /* BRISANET BRAND COLORS */
         :root {
             --brisanet-blue: #002D72;
             --brisanet-orange: #FF671F;
@@ -47,6 +49,7 @@
             width: 1280px;
             color: var(--text-main);
             border-top: 8px solid var(--brisanet-orange);
+            border-radius: 8px;
         }
 
         /* ORANGE & BLUE DETAILS */
@@ -161,10 +164,22 @@
             gap: 8px;
         }
         .dots div { width: 8px; height: 8px; background-color: var(--brisanet-orange); border-radius: 50%; opacity: 0.3; }
+
+        /* SCROLL PARA ECRÃS PEQUENOS (Mantém o formato original de slide) */
+        @media (max-width: 1300px) {
+            body { 
+                display: flex; 
+                flex-direction: column; 
+                align-items: flex-start; 
+                padding: 20px; 
+                overflow-x: auto; 
+            }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Slide 1: Capa -->
     <div class="slide-container" id="slide1">
         <div class="title-layout">
             <div style="color: var(--brisanet-blue); font-weight: 700; margin-bottom: 20px; letter-spacing: 2px;">TREINAMENTO CORPORATIVO</div>
@@ -176,6 +191,7 @@
         <div class="dots"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
 
+    <!-- Slide 2: Premissas Fundamentais -->
     <div class="slide-container" id="slide2">
         <h2 class="slide-title">Premissas Fundamentais</h2>
         <div class="content-area">
@@ -202,6 +218,7 @@
         </div>
     </div>
 
+    <!-- Slide 3: Porquê -->
     <div class="slide-container" id="slide3">
         <h2 class="slide-title">1. Primeiro o Porquê</h2>
         <div class="content-area">
@@ -225,6 +242,7 @@
         </div>
     </div>
 
+    <!-- Slide 4: Clareza -->
     <div class="slide-container" id="slide4">
         <h2 class="slide-title">2. Oriente com Clareza</h2>
         <div class="content-area">
@@ -254,6 +272,7 @@
         </div>
     </div>
 
+    <!-- Slide 5: Empatia -->
     <div class="slide-container" id="slide5">
         <h2 class="slide-title">3. Pratique Empatia</h2>
         <div class="content-area">
@@ -262,7 +281,7 @@
                     <img src="https://images.unsplash.com/photo-1521791136364-798a7bc0d262?auto=format&fit=crop&q=80&w=1000" alt="Equipe Brisanet Colaborando">
                 </div>
                 <div class="bullet-list">
-                    <h3>Conheça o seu Time</h3>
+                    <h3>Conheça a sua Equipa</h3>
                     <ul>
                         <li><i class="fa-solid fa-triangle-exclamation"></i> Quais são os obstáculos?</li>
                         <li><i class="fa-solid fa-user-graduate"></i> Qual o nível de preparo atual?</li>
@@ -274,6 +293,7 @@
         </div>
     </div>
 
+    <!-- Slide 6: Acompanhamento -->
     <div class="slide-container" id="slide6">
         <h2 class="slide-title">4. Acompanhe (Delegar ≠ Delargar)</h2>
         <div class="content-area">
@@ -294,6 +314,7 @@
         </div>
     </div>
 
+    <!-- Slide 7: Feedback -->
     <div class="slide-container" id="slide7">
         <h2 class="slide-title">5. Aplique Feedback</h2>
         <div class="content-area">
@@ -314,6 +335,7 @@
         </div>
     </div>
 
+    <!-- Slide 8: Encerramento -->
     <div class="slide-container" id="slide8" style="background: linear-gradient(135deg, white 60%, var(--accent-soft) 100%);">
         <div class="section-title-layout">
             <h2 style="font-size: 80px;">REINVENTE-<span>SE</span></h2>
